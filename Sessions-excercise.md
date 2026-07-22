@@ -76,7 +76,7 @@ Searching for an elFinder exploit on Metasploit, I find one for command injectio
  
 What resulted was a meterpreter shell on the web server, which from there using getuid gave me my current user.
 
-&#x1F6A9; found **www-data***
+&#x1F6A9; found **www-data**
  
 ---
  
