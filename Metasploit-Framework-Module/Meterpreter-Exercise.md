@@ -1,4 +1,4 @@
-### Sessions Exercise
+### Meterpreter Exercise
  
 IP: 10.129.68.5
  
