@@ -1,4 +1,4 @@
-### Sessions Exercise
+### Service Scanning Exercise
  
 IP: [target]
  
