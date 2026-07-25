@@ -1,4 +1,4 @@
-### Sessions Exercise
+### Privilege Escalation Exercise
  
 IP: 154.57.164.81
  
