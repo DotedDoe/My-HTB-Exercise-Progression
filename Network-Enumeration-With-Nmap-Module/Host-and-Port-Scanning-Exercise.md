@@ -1,4 +1,4 @@
-### Nmap Enumeration Exercise
+### Host and Port Scanning Exercise
  
 IP: 10.129.2.49
  
