@@ -1,4 +1,4 @@
-### Nmap Enumeration Exercise
+### Service Enumeration Exercise
  
 IP: 10.129.72.138
  
