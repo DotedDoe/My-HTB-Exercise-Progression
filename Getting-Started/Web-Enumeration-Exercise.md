@@ -1,4 +1,4 @@
-### Sessions Exercise
+### Web Enumeration Exercise
  
 IP: 154.57.164.64
  
