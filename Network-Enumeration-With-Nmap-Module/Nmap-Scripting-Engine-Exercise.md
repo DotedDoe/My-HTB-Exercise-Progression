@@ -1,4 +1,4 @@
-### NSE Enumeration Exercise
+### Nmap Scripting Engine Exercise
  
 IP: 10.129.2.49
  
