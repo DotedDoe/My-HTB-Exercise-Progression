@@ -1,5 +1,5 @@
-### GetSimple Exercise
- 
+### Knowledge Check Exercise
+
 IP: 10.129.42.249
  
 ---
