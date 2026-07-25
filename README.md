@@ -1,3 +1,2 @@
-# My-metasploit-framework-progression
-Although I shouldve started these a while ago, I felt that the Metasploit was a good place to start taking showing my thoughts and progression through the virtual machines
-While I have been taking extensive notes, there hasnt been much tangible to actually show off so I though Id record my progress in a github repo.
+# My overall Hack The Box Progression
+Although I shouldve started these a while ago, Id complete questions and compare my answers and the way I figured it out to others, and I would notice that people have these really cool repos set up detailing their entire run through and their decision making. I thought that Id make one of my own since itd be nice to look back and relearn older tricks whenever I may get stuck and its something cool to show off.
