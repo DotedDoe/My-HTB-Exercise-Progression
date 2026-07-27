@@ -1,4 +1,4 @@
-### IMAP/POP3 Exercise
+### IMAP/POP3 Enumeration Exercise
  
 IP: 10.129.42.195
  
@@ -72,6 +72,25 @@ Upon connecting, one of the flags is revealed to me just from enumerating the se
  
 ### Question 4:
 What is the customized version of the POP3 server?
+ 
+For question 4, I connect to the pop3s via openssl again.
+ 
+```diff
++ $ openssl s_client -connect 10.129.42.195:pop3s
+```
+ 
+	Connecting to 10.129.42.195
+	CONNECTED(00000003)
+	<snip>
+	---
+	read R BLOCK
+	+OK InFreight POP3 v9.188
+ 
+This reveals the customized version of the POP3 server.
+ 
+&#x1F6A9; found **InFreight POP3 v9.188**.
+ 
+---
  
 ### Question 5:
 What is the admin email address?
