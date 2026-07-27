@@ -1,4 +1,4 @@
-### IMAP/POP3 Enumeration Exercise
+### IMAP/POP3 Exercise
  
 IP: 10.129.42.195
  
