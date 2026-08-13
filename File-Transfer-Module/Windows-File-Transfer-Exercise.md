@@ -1,4 +1,4 @@
-### File Upload/Download Exercise
+### Windows File Transfer Exercise
  
 IP: 10.129.99.36
  
