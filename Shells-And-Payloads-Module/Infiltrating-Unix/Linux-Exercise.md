@@ -1,4 +1,4 @@
-### Infiltrating Linux Exercise
+### Infiltrating Unix/Linux Exercise
  
 IP: 10.129.201.101
  
@@ -19,7 +19,7 @@ Exploit the target and find the hostname of the router in the devicedetails dire
 I start off by running an nmap scan, constructing it like so.
  
 ```diff
-+ $ sudo nmap -sT -A -p- 10.129.201.101
++ $ sudo nmap -sV -A -sC 10.129.201.101
 ```
  
 	PORT     STATE SERVICE  VERSION
