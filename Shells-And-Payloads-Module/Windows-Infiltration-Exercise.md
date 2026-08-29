@@ -29,6 +29,39 @@ I start off by doing an nmap scan on the server.
  
 ```diff
 + $ sudo nmap -sT -A -p- 10.129.123.117
+PORT     STATE SERVICE      VERSION
+80/tcp   open  http         Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: 10.129.123.199 - /
+135/tcp  open  msrpc        Microsoft Windows RPC
+139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds Windows Server 2016 Standard 14393 microsoft-ds
+5985/tcp open  http         Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 2h18m38s, deviation: 4h02m31s, median: -1m23s
+| smb2-security-mode: 
+|   3:1:1: 
+|_    Message signing enabled but not required
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb-os-discovery: 
+|   OS: Windows Server 2016 Standard 14393 (Windows Server 2016 Standard 6.3)
+|   Computer name: SHELLS-WINBLUE
+|   NetBIOS computer name: SHELLS-WINBLUE\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2026-08-29T00:10:42-07:00
+| smb2-time: 
+|   date: 2026-08-29T07:10:39
+|_  start_date: 2026-08-29T07:09:27
 ```
  
 I see that SMB is running on Windows and is the 2016 version, so I check to see if it's vulnerable to EternalBlue by using Metasploit's ms17_010 scanner.
