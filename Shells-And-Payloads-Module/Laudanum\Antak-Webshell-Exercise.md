@@ -1,5 +1,5 @@
-### Laudanum, One Webshell to Rule Them All Exercise
- 
+### Laudanum/Antak Webshell Exercise.md
+
 IP: 10.129.42.197
  
 ---
@@ -57,3 +57,33 @@ Where is the Laudanum aspx web shell located on Pwnbox? Submit the full path. (F
 The file itself is located in /usr/share/laudanum/aspx/shell.aspx.
  
 &#x1F6A9; found **/usr/share/laudanum/aspx/shell.aspx**.
+ 
+---
+ 
+### Antak
+ 
+### Question 1:
+Where is the Antak webshell located on Pwnbox? Submit the full path. (Format: /path/to/antakwebshell)
+ 
+Alternatively, you could use the Antak webshell, located in /usr/share/nishang/Antak-WebShell/antak.aspx, which can be edited for specific credentials which are required to access the webshell.
+ 
+&#x1F6A9; found **/usr/share/nishang/Antak-WebShell/antak.aspx**.
+ 
+---
+ 
+### Question 2:
+Establish a web shell with the target using the concepts covered in this section. Submit the name of the user on the target that the commands are being issued as. In order to get the correct answer you must navigate to the web shell you upload using the vHost name. (Format: ****\****, 1 space)
+ 
+Accessing it and running whoami reveals the user.
+ 
+```diff
++ PS> whoami
+```
+ 
+	iis apppool\status
+ 
+&#x1F6A9; found **iis apppool\status**.
+ebshell.
+Accessing it and running whoami reveals 
+PS> whoami
+iis apppool\status
