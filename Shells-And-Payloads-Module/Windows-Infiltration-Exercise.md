@@ -29,7 +29,7 @@ I start off by doing an nmap scan on the server.
  
 ```diff
 + $ sudo nmap -sT -A -p- 10.129.123.117
-PORT     STATE SERVICE      VERSION
+```PORT     STATE SERVICE      VERSION
 80/tcp   open  http         Microsoft IIS httpd 10.0
 | http-methods: 
 |_  Potentially risky methods: TRACE
@@ -70,7 +70,6 @@ I see that SMB is running on Windows and is the 2016 version, so I check to see 
 + [msf](Jobs:0 Agents:0) >> use auxiliary/scanner/smb/smb_ms17_010
 + [msf](Jobs:0 Agents:0) auxiliary(scanner/smb/smb_ms17_010) >> set RHOSTS 10.129.123.117
 + [msf](Jobs:0 Agents:0) auxiliary(scanner/smb/smb_ms17_010) >> run
-```
  
 	[+] 10.129.123.117:445    - Host is likely VULNERABLE to MS17-010! - Windows Server 2016 Standard 14393 x64 (64-bit)
  
