@@ -1,4 +1,4 @@
-### SAM/LSA Credential Dumping Exercise
+### Attacking SAM, SYSTEM, and SECURITY
 
 IP: 10.129.202.137
 
